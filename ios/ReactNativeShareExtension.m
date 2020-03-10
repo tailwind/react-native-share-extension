@@ -80,9 +80,6 @@ RCT_REMAP_METHOD(data,
             if([provider hasItemConformingToTypeIdentifier:URL_IDENTIFIER]) {
                 urlProvider = provider;
                 *stop = YES;
-            } else if ([provider hasItemConformingToTypeIdentifier:TEXT_IDENTIFIER]){
-                textProvider = provider;
-                *stop = YES;
             } else if ([provider hasItemConformingToTypeIdentifier:IMAGE_IDENTIFIER]){
                 imageProvider = provider;
                 *stop = YES;
